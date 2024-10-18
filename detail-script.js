@@ -11,7 +11,7 @@ function getQueryParams() {
   async function fetchMovieDetails(movieId) {
     try {
       const response = await fetch(
-        `https://movie-details-data.onrender.com/movie/${movieId}`
+        `https://bookmyshow-backend-xlut.onrender.com/${movieId}`
       );
       const movie = await response.json();
   
