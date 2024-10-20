@@ -4,7 +4,7 @@
 
 async function fetchMovies() {
     try {
-      const response = await fetch("https://bookmyshow-backend-xlut.onrender.com/movie/get-movie");
+      const response = await fetch("https://bookmyshow-backend-xlut.onrender.com/movie/get-movies");
       const movies = await response.json();
       const movieCardsContainer = document.getElementById("movieCards");
       movieCardsContainer.innerHTML = "";
